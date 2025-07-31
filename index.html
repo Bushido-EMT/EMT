@@ -208,6 +208,23 @@ image2 = "im2.jpg"
         flex-direction: column;
       }
     }
+    .content-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  background-color: var(--dark-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tech-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -232,10 +249,10 @@ image2 = "im2.jpg"
           <br><br>
           Avec EMT, vous bénéficiez d'un accompagnement complet et durable, où la technologie et la performance opérationnelle vont de pair.
         </p>
-            <div class="content-images">
-          <img src="im1.jpg" alt="Technologie 1">
-          <img src="im2.jpg" alt="Technologie 2">
-        </div>
+          <div class="content-images">
+  <img src="im1.jpg" alt="Technologie 1" class="tech-image">
+  <img src="im2.jpg" alt="Technologie 2" class="tech-image">
+</div>
       </section>
 
       <section class="content-section">
