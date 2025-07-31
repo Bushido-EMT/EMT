@@ -42,6 +42,26 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       border: 1px solid rgba(0, 102, 255, 0.2);
     }
+.big-title {
+  font-size: 28px;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+.big-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, #00ffff, transparent);
+}
 
       .logo-main {
       font-family: 'Orbitron', sans-serif;
@@ -253,6 +273,27 @@
         max-width: 120px;
       }
     }
+.highlight-title {
+  color: #00ffff;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+.highlight-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(90deg, #00ffff, transparent);
+}
+
   </style>
 </head>
 <body>
@@ -265,28 +306,38 @@
     </header>
 
     <main>
-      <section class="content-section">
-        <h2>Qui Nous Sommes</h2>
-        <p>
-         <strong>EMT : Elektronik Medizin Technik</strong><br><br>
-          Fondée en 2011, EMT Elektronik Medizin Technik est spécialisée dans le développement, l'intégration et la maintenance de solutions technologiques de pointe à destination des secteurs biomédical et industriel.
-          <br><br>
-           Nos services couvrent l'ensemble du cycle de vie de vos équipements : de la conception sur mesure à l'installation, en passant par une maintenance préventive et corrective assurée par nos techniciens qualifiés. Nous veillons à optimiser la disponibilité, la conformité et la longévité de vos dispositifs.
-          <br><br>
-          Expertise & Innovation
-Spécialisée dans les projets médicaux et industriels, Ste EMT (Elektronik Medizin Technik) allie savoir-faire technique et innovation pour proposer des solutions performantes et fiables.
-          <br><br>
-         
-  Engagement & Excellence
-Notre entreprise s’impose comme un partenaire de référence grâce à une approche rigoureuse, une équipe expérimentée et un engagement constant envers la qualité.
-          <br><br>
-          Solutions sur mesure
-Que ce soit dans le domaine médical (équipements haute technologie) ou industriel (ingénierie avancée), nous relevons les défis techniques avec agilité et créativité, en plaçant les besoins de nos clients au centre de notre démarche.
-          <br><br>
-         L’innovation au service de la performance – Ste EMT, votre partenaire technologique de confiance.
-          <br><br>
-          Avec EMT, vous bénéficiez d'un accompagnement complet et durable, où la technologie et la performance opérationnelle vont de pair.
-        </p>
+
+    <section class="content-section">
+  <h2 class="big-title">EMT : Elektronik Medizin Technik</h2>
+
+  <p>
+    Fondée en 2011, EMT est spécialisée dans le développement, l'intégration et la maintenance de solutions technologiques de pointe pour les secteurs biomédical et industriel.
+  </p>
+
+  <h3 class="highlight-title">Expertise & Innovation</h3>
+  <p>
+    EMT allie savoir-faire technique et innovation pour proposer des solutions performantes et fiables adaptées aux besoins médicaux et industriels.
+  </p>
+
+  <h3 class="highlight-title">Engagement & Excellence</h3>
+  <p>
+    Une approche rigoureuse, une équipe expérimentée et un engagement permanent envers la qualité font de nous un partenaire de confiance.
+  </p>
+
+  <h3 class="highlight-title">Solutions sur mesure</h3>
+  <p>
+    Qu’il s’agisse d’équipements médicaux ou de projets industriels, nous concevons des solutions sur mesure, performantes et adaptées à chaque besoin.
+  </p>
+
+  <h3 class="highlight-title">L’innovation au service de la performance</h3>
+  <p>
+    Ste EMT vous accompagne avec des technologies fiables, pensées pour maximiser votre performance opérationnelle.
+    <br><br>
+    Avec EMT, vous bénéficiez d'un accompagnement complet et durable, où la technologie et la performance opérationnelle vont de pair.
+  </p>
+</section>
+
+
         <div class="content-images">
           <img src="im1.jpg" alt="Technologie 1" class="tech-image">
           <img src="im2.jpg" alt="Technologie 2" class="tech-image">
